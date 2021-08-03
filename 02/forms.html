@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>第二回課題、フォーム部品練習</title>
-  </head>
-  <body>
-    <h1>第二回課題、フォーム部品練習</h1>
-      <form method='get' action='receive.php'>
-        <!--
-          ここにform部品を自由に配置してみよう
-          送信ボタンとリセットボタンも忘れずに
-        --->
-      </form>
+    <title>好きなゲームは？</title>
+    </head>
+            <body>
+                <h1>ゲームについて質問です</h1>
+                <form method='get' action='receive.php'>
+                    <table border="3" >
+                        <tr>
+                            <th colspan="2">質問</th>
+                        </tr>
+                        <tr>
+                            <td>名前 </td>
+                            <td ><input type="text" name="name" value=""></p> </td>
+                        </tr>
+                        <tr>
+                            <td>持っているゲーム機は？ </td>
+                            <td ><input type="checkbox" name="kisyu[]" value="PS5">PS5
+                            <input type="checkbox" name="kisyu[]" value="switch">switch
+                            <input type="checkbox" name="kisyu[]" value="PS4">PS4</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>好きなジャンルは？ </td>
+                            <td ><select name="zyanru">
+                                <p>
+                                    <option  selected="selected">好きなジャンルは？</option>
+                                    <option name="zyanru" value="FPS">FPS</option>
+                                    <option name="zyanru" value="アクション">アクション</option>
+                                    <option name="zyanru" value="恋愛シミュレーション">恋愛シミュレーション</option>
+                                    </select></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>何故それを選んだのですか？</td>
+                            <td ><p><input type="radio" name="kimoti" value="好きだから">好きだから</p>
+                            <p><input type="radio" name="kimoti" value="興味があったから">興味があったから</p>
+                            <p><input type="radio" name="kimoti" value="他に好きなのがないから">他に好きなのがないから</p>
+                            </p>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>あなたのお勧めなゲームはありますか？</td>
+                            <td><textarea name="kanso" rows="5" cols="40"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align:right;"><input type="submit"><input type="reset">
+                            </td>
+                        </tr>
+                </form>
 
   </body>
 </html>
