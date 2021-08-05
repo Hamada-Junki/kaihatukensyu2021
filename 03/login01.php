@@ -8,9 +8,11 @@
     <body>
         <h1>ログイン</h1>
         <form method='post' action='result01.php'>
-                <input type="text" name="id">
-                <input type="text" name="pas">
-                <input type="submit"><input type="reset">
+                <p>ログインID</p>
+                <p><input type="text" name="id"></p>
+                <p>パスワード</p>
+                <p><input type="password" name="pas"></p>
+                <p><input type="submit"><input type="reset"></p>
         </form>
     </body>
 </html>
