@@ -7,12 +7,12 @@
     </head>
     <body>
         <h1>ログイン</h1>
-        <form method='post' action='result01.php'>
+            <form method='post' action='result01.php'>
                 <p>ログインID</p>
                 <p><input type="text" name="id"></p>
                 <p>パスワード</p>
                 <p><input type="password" name="pas"></p>
                 <p><input type="submit"><input type="reset"></p>
-        </form>
+            </form>
     </body>
 </html>
