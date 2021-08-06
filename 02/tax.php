@@ -18,7 +18,7 @@
             <tr>
                 <td ><input type="text" name="syouhin"> </td>
                 <td ><input type="text" name="kakaku">円</td>
-                <td><input type="text" name="post" max="999" min="1">個</td>
+                <td><input type="number" name="post" max="999" min="1">個</td>
                 <td >
                     <input type="radio" name="zeiritu" value="8">8%
                     <input type="radio" name="zeiritu" value="10">10%
@@ -76,11 +76,11 @@
                 $kasan3 = $_GET['kakaku3']*$_GET['post3'];
                 $kasan4 = $_GET['kakaku4']*$_GET['post4'];
 
-                $kasan5 =$kasan+$kasan*$_GET['zeiritu']*0.01;
-                $kasan6 =$kasan1+$kasan1*$_GET['zeiritu1']*0.01;
-                $kasan7 =$kasan2+$kasan2*$_GET['zeiritu2']*0.01;
-                $kasan8 =$kasan3+$kasan3*$_GET['zeiritu3']*0.01;
-                $kasan9 =$kasan4+$kasan4*$_GET['zeiritu4']*0.01;
+                $kasan5 =$kasan+($kasan*($_GET['zeiritu']*0.01));
+                $kasan6 =$kasan1+($kasan1*($_GET['zeiritu1']*0.01));
+                $kasan7 =$kasan2+($kasan2*($_GET['zeiritu2']*0.01));
+                $kasan8 =$kasan3+($kasan3*($_GET['zeiritu3']*0.01));
+                $kasan9 =$kasan4+($kasan4*($_GET['zeiritu4']*0.01));
             ?>
         <table border="1" >
             <tr>
